@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+  padding: 20px;
+  background: cadetblue;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #4e89ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+}
+
+
+.card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: white;
+  border: 2px solid #4e89ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.card.flipped {
+  background: #d8e3ff;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.message {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+.difficulty {
+  margin: 1.5rem 0;
+}
+
+.difficulty h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.difficulty-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.difficulty-buttons button {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  border: 2px solid #4e89ff;
+  color: #4e89ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.difficulty-buttons button:hover {
+  background-color: #4e89ff;
+  color: #ffffff;
+}
